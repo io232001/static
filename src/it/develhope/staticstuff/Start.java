@@ -12,7 +12,7 @@ public class Start
 
         System.out.println("Badge 1 details:");
         bdg1.showBadgeDetails();
-        System.out.println("\nBadge 2 details:");
+        System.out.println("Badge 2 details:");
         bdg2.showBadgeDetails();
 
     }

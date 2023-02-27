@@ -11,7 +11,9 @@ public class Badge
     }
 
     private String generateBadgeIdCode() {
-        return "XYZ" + employee.name + employee.surname + "ZYX";
+        String code1 = "XYZ";
+        String code2 = "ZYX";
+        return code1 + employee.name + employee.surname + code2;
     }
 
     public void showBadgeDetails() {
@@ -20,10 +22,9 @@ public class Badge
         System.out.println("Badge ID code: " + badgeIdCode);
     }
 
-    Badge(Employee employeeThatNeedsBadge)
-    {
+    public Badge(Employee employeeThatNeedsBadge) {
         keepTrackOfEmployeesNumber();
-        employee = employeeThatNeedsBadge;
-        badgeIdCode = generateBadgeIdCode();
+        this.employee = employeeThatNeedsBadge;
+        this.badgeIdCode = generateBadgeIdCode();
     }
 }
